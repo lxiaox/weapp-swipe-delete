@@ -1,0 +1,17 @@
+<view class="list" wx:for="{{list}}" wx:key="{{index}}">
+  <movable-area class="movable-area">
+    <movable-view class="movable-view" direction="horizontal" data-index="{{index}}" bindtouchstart="handleTouchStart" bindtouchend="handleTouchEnd" x="{{item.xMove}}" damping="180">
+      <view class="move-wrapper">
+        <view class="content">
+          <view class="msg" data-id="{{item.id}}">
+            <view class="-name">{{item.name}}</view>
+            <view class="phone">{{item.phone}}</view>
+          </view>
+        </view>
+        <view class="del" data-index="{{index}}" bindtap="remove">
+          <text>删除</text>
+        </view>
+      </view>
+    </movable-view>
+  </movable-area>
+</view>

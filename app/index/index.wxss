@@ -1,0 +1,54 @@
+view {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.list {
+  border-top: 1rpx solid #e5e5e5;
+}
+
+.list:last-child {
+  border-bottom: 1rpx solid #e5e5e5;
+}
+
+.movable-area {
+  overflow: hidden;
+  width: 750rpx;
+  height: 148rpx;
+}
+
+.movable-view {
+  width: 900rpx;
+  height: 148rpx;
+  overflow: hidden;
+}
+
+.move-wrapper {
+  width: 918rpx;
+  height: 148rpx;
+  overflow: hidden;
+}
+
+.msg {
+  float: left;
+  width: 750rpx;
+  height: 148rpx;
+  padding-top: 30rpx;
+  padding-left: 30rpx;
+}
+
+.name {
+  margin-bottom: 12rpx;
+}
+
+.del {
+  background: #f44;
+  float: right;
+  width: 150rpx;
+  height: 148rpx;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
